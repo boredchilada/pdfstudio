@@ -17,8 +17,7 @@ to PDF analysis, go read them first — this README can wait.
   hosts `pdfid.py` and `pdf-parser.py`, which have been the correct
   answer to "how do I look inside a malicious PDF" since roughly
   forever. Relevant reading:
-  - [Anatomy of Malicious PDF Documents](https://blog.didierstevens.com/2008/05/19/anatomy-of-malicious-pdf-documents/) (2008)
-  - [Malicious PDF Analysis E-book (workshop slides)](https://didierstevens.com/files/training/malicious-pdf-analysis-ebook.zip)
+  - [Anatomy of Malicious PDF Documents](https://www.scribd.com/document/20604734/Anatomy-of-Malicious-PDF-Documents) (2008)
   - [The entire /pdf/ blog category](https://blog.didierstevens.com/category/pdf/)
     — fifteen+ years of "here's how that one weird trick works"
 
