@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Local analysis artifacts — these can contain live malware output,
+# never commit them to a public repo.
+evidence/
+malware_samples/
+out/
+*.pdf
+*.zip
+*.sarif
+*.stix.json

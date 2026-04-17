@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdfstudio"
+version = "0.1.0"
+description = "Static structure browser and triage toolkit for PDF files — PEstudio-style, for malware analysts."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Michel Verbel" },
+]
+keywords = ["pdf", "malware", "forensics", "dfir", "triage", "security"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Utilities",
+]
+dependencies = []
+
+[project.optional-dependencies]
+tui = ["windows-curses; platform_system == 'Windows'"]
+yara = ["yara-python>=4.0"]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+pdfstudio = "pdfstudio.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/boredchilada/pdfstudio"
+Issues = "https://github.com/boredchilada/pdfstudio/issues"
+
+[tool.setuptools.packages.find]
+include = ["pdfstudio*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q"
