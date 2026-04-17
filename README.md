@@ -37,7 +37,7 @@ to PDF analysis, go read them first — this README can wait.
   Thank you, Marc.
 
 If you want to argue that pdfstudio is a love letter written in too
-much Python, we won't stop you.
+much Python, I won't stop you.
 
 Stdlib-only Python 3.10+. Optional `yara-python` for YARA scanning;
 `windows-curses` for the TUI on Windows.
