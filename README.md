@@ -1,7 +1,5 @@
 # pdfstudio
 
-*Now I can finally proceed to finishing my certification exercise*
-
 **PEstudio-style static structure browser for PDF files.**
 
 Stevens-parity CLI with Catalog-graph walker, 30+ detection rules,
